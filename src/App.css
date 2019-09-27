@@ -3,11 +3,12 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ff996d;
+  background-image: linear-gradient(to bottom left, #ff996d, #fec054);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,6 +18,13 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.app-title {
+  color: #00456b;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.app-desc {
+  color: #00456b;
 }
