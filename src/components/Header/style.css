@@ -1,0 +1,12 @@
+/*background-color: #ff996d;*/
+
+/* background-image: linear-gradient(to bottom left, #ff996d, #fec054); */
+
+.header-logo {
+    height: 10vmin;
+    padding: 0.7rem;
+}
+
+header {
+    background-color: #ffe3dc;
+}
