@@ -1,18 +1,16 @@
-.hero {
-    background-color: #ffe3dc;
-}
-.hero .container {
-    background-color: #ffe3dc;
+
+ .hero .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+    color: #FFE3DC
+} 
 
 .hero-image {
     margin: 1rem 3rem;
 }
 .hero-image img {
-    height: 25rem;
+    height: 350px;
 }
 
 .hero-title {
@@ -29,6 +27,17 @@
 
 .hero-title h2 {
     font-family: 'Hind Siliguri', sans-serif;
-    font-weight: lighter;
+    font-weight: 500;
     font-size: 2rem;
+}
+
+canvas#back-canvas {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-color: #00456B;
+}
+canvas#front-canvas {
+    position: absolute;
+    top: 0; 
 }
