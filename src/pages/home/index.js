@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-import LandingContainer from "../../components/HomeHero";
 import { Link } from 'react-router-dom';
+import Hero from '../../components/HomeHero';
 
 export default class Main extends Component {
     render() {
         return (
             <div>
-                <LandingContainer />
+                <Hero />
                 <Link to="/subpage/minhaCustomParam"></Link>
             </div>
         );

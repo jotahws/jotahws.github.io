@@ -62,6 +62,10 @@ export default class CanvasParticles {
 
 }
 
+export const updateSceenSize = (height, width) => {
+    cwidth = width;
+    cheight = height;
+}
 
 //Parent Class
 class Particle {
