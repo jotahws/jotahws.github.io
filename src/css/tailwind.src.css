@@ -1,0 +1,45 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.btn {
+    cursor: pointer;
+    @apply font-bold;
+    @apply py-2;
+    @apply px-4;
+    @apply rounded;
+}
+
+.btn-pill {
+    cursor: pointer;
+    @apply font-bold;
+    @apply py-2;
+    @apply px-4;
+    @apply rounded-full;
+}
+
+.btn-blue {
+    @apply bg-blue-500;
+    @apply text-white;
+}
+
+.btn-blue:hover {
+    @apply bg-blue-700;
+}
+
+.btn.btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.btn-pill.btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+}
+
+.cursive {
+    font-family: 'Pacifico', cursive;
+}
