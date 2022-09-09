@@ -10912,6 +10912,52 @@ video {
   transition-duration: 1000ms;
 }
 
+.btn {
+  cursor: pointer;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.25rem;
+}
+
+.btn-pill {
+  cursor: pointer;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 9999px;
+}
+
+.btn-blue {
+  background-color: #4299e1;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #2b6cb0;
+}
+
+.btn.btn-sm {
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}
+
+.btn-pill.btn-sm {
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.cursive {
+  font-family: 'Pacifico', cursive;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

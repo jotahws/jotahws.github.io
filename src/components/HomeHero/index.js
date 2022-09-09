@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './style.css';
 import dino from '../../assets/dino/dino.svg';
-import CanvasParticles, {updateSceenSize} from './particles.js';
+import CanvasParticles, {updateScreenSize} from '../../util/particles.js';
 import $ from 'jquery';
 
 //Component
@@ -11,7 +11,7 @@ class Hero extends Component {
         super();
         this.config = {
             particle: {
-                amount: 25,
+                amount: 10,
                 colors: ['#FF996D', '#2B7789', '#DDC5D4', '#FEC054'],
                 minSize: 10,
                 maxSize: 15,
@@ -23,6 +23,7 @@ class Hero extends Component {
     }
 
     componentDidMount() {
+        //$('.hero').css('min-height', window.innerHeight - $('header').outerHeight(true));
         this.canvasHeight = $('.hero').outerHeight(true) + $('header').outerHeight(true) + 100;
         const backCanvas = this.initCanvas('back-canvas');
         const frontCanvas = this.initCanvas('front-canvas');
@@ -38,12 +39,30 @@ class Hero extends Component {
         window.addEventListener('resize', function () {
             canvas.height = $('.hero').outerHeight(true) + $('header').outerHeight(true) + 100;
             canvas.width = window.innerWidth;
-            updateSceenSize(canvas.height, canvas.width);
+            updateScreenSize(canvas.height, canvas.width);
         });
 
         var cp = new CanvasParticles(canvas, this.config);
 
         return cp;
+    }
+
+    moreParticles = () => {
+        if (this.config.particle.amount <= 85) {
+            this.config.particle.amount += 20;
+            const backCanvas = this.initCanvas('back-canvas');
+            const frontCanvas = this.initCanvas('front-canvas');
+            backCanvas.create(window.innerWidth, this.canvasHeight);
+            frontCanvas.create(window.innerWidth, this.canvasHeight);
+        }
+    }
+
+    lessParticles = () => {
+        this.config.particle.amount -= this.config.particle.amount <= 0 ? 0 : 20;
+        const backCanvas = this.initCanvas('back-canvas');
+        const frontCanvas = this.initCanvas('front-canvas');
+        backCanvas.create(window.innerWidth, this.canvasHeight);
+        frontCanvas.create(window.innerWidth, this.canvasHeight);
     }
 
     render() {
@@ -61,6 +80,10 @@ class Hero extends Component {
                     </div>
                 </div>
                 <canvas id="front-canvas"></canvas>
+                <div id="canvas-menu">
+                    <button className="btn-pill btn-sm btn-blue ptc-btn" onClick={this.moreParticles}>More particles</button>
+                    <button className="btn-pill btn-sm btn-blue mt-1 ptc-btn" onClick={this.lessParticles}>Less particles</button>
+                </div>
             </div>
         );
     }

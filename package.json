@@ -3,17 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "jquery": "^3.4.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.1.0",
-    "react-scripts": "3.1.2"
+    "react-scripts": "3.1.2",
+    "rellax": "^1.12.1"
   },
   "scripts": {
-    "tailwind:css": "postcss src/css/tailwind.src.css -o src/css/tailwind.css",
+    "buildcss": "postcss src/css/tailwind.src.css -o src/css/tailwind.css",
     "deploy": "gh-pages -d build -b master",
-    "start": "npm run tailwind:css && react-scripts start",
-    "build": "npm run tailwind:css && react-scripts build",
+    "start": "npm run buildcss && react-scripts start",
+    "build": "npm run buildcss && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

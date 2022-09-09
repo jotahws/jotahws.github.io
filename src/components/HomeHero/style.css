@@ -1,6 +1,6 @@
 
  .hero {
-    color: #FFE3DC
+    color: #FFE3DC;
 } 
 
 .hero-image {
@@ -42,5 +42,17 @@ canvas#back-canvas {
 }
 canvas#front-canvas {
     position: absolute;
-    top: 0; 
+    top: 0;
+}
+
+#canvas-menu {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+button.ptc-btn.btn-pill {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
 }

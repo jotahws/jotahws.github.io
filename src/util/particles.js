@@ -62,7 +62,7 @@ export default class CanvasParticles {
 
 }
 
-export const updateSceenSize = (height, width) => {
+export const updateScreenSize = (height, width) => {
     cwidth = width;
     cheight = height;
 }
