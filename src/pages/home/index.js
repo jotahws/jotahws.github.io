@@ -15,27 +15,40 @@ export default class Main extends Component {
     }
 
     getForms = () => {
-        const images = [];
+        let images = [];
         for (let i = 1; i <= 8; i++) {
-            images.push(require('../../assets/particles/ptc-' + i + '.svg'));
+            images.push(require('../../assets/particles/ptc-1.svg'));
+            images.push(require('../../assets/particles/ptc-2.svg'));
+            images.push(require('../../assets/particles/ptc-3.svg'));
+            images.push(require('../../assets/particles/ptc-4.svg'));
+            images.push(require('../../assets/particles/ptc-5.svg'));
+            images.push(require('../../assets/particles/ptc-6.svg'));
+            images.push(require('../../assets/particles/ptc-7.svg'));
+            images.push(require('../../assets/particles/ptc-8.svg'));
+            images.push(require('../../assets/particles/ptc-9.svg'));
+            images.push(require('../../assets/particles/ptc-10.svg'));
+            images.push(require('../../assets/particles/ptc-11.svg'));
+            images.push(require('../../assets/particles/ptc-12.svg'));
+            images.push(require('../../assets/particles/ptc-13.svg'));
+            images.push(require('../../assets/particles/ptc-14.svg'));
+            images.push(require('../../assets/particles/ptc-15.svg'));
+            images.push(require('../../assets/particles/ptc-16.svg'));
         }
         const items = []
 
+        let portion = 98/images.length;
+        let left = 0;
         for (const [idx, value] of images.entries()) {
-            let left;
-            if (idx >= 4) {
-                left = (30 * idx / 4) + 40;
-            } else {
-                left = (30 * idx / 4) + 2;
-            }
+            left += portion;
+
             const style = {
                 position: 'absolute',
-                top: Math.random() * (500 - 0) + 0,
+                top: Math.random() * (700 - 0) + 0,
                 left: left + '%',
-                width: '70px'
+                width: '10px',
+                opacity: '0.08'
             }
-            const rellaxSpeed = Math.random() * (5 - 0) + 0;
-            // const rellaxSpeed = -10;
+            const rellaxSpeed = Math.random() * (10 - 0) + 0;
             items.push(<img src={value} key={idx} style={style} className="rellax" data-rellax-speed={rellaxSpeed} alt="" />)
         }
         return items;
@@ -63,7 +76,7 @@ export default class Main extends Component {
                     </div>
                     <Separator name="Olá"/>
                 </div>
-                <div className="my-64">
+                <div className="my-20">
                 </div>
                 <Link to="/subpage/minhaCustomParam"></Link>
             </div>

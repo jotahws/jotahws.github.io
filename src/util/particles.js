@@ -107,7 +107,7 @@ class Particle {
         let mx = mouseX;
         let my = mouseY;
         //Check if particle position is equal to mouse position
-        if ((this.x < (mx + 50) && this.x > (mx - 50)) && (this.y < (my + 50) && this.y > (my - 50))) {
+        if ((this.x < (mx + 100) && this.x > (mx - 100)) && (this.y < (my + 100) && this.y > (my - 100))) {
             //If so, check if particle is above or below mouse
             //Increment or decrease Y value to the particle, according to the position
             if (this.y > my) {

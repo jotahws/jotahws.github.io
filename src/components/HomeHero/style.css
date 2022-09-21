@@ -1,6 +1,6 @@
 
  .hero {
-    color: #FFE3DC;
+    color: #e5e8ea;
 } 
 
 .hero-image {
@@ -38,7 +38,6 @@ canvas#back-canvas {
     position: absolute;
     top: 0;
     z-index: -1;
-    background-color: #00456B;
 }
 canvas#front-canvas {
     position: absolute;
@@ -59,15 +58,17 @@ button.ptc-btn.btn-pill {
 
 .hero-img-anim {
   animation-name: heroimg;
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.89, -0.01, 0.23, 1);
+  animation-direction: alternate-reverse;
   margin-top: 50px;
 }
 
 @keyframes heroimg {
     0%   {margin-top: 50px; margin-bottom: 50px;}
     25%  {margin-top: 0px; margin-bottom: 100px;}
-    50%  {margin-top: 50px; margin-bottom: 50px;}
-    75%  {margin-top: 50px; margin-bottom: 50px;}
-    100% {margin-top: 50px; margin-bottom: 50px;}
+    50%   {margin-top: 50px; margin-bottom: 50px;}
+    75%  {margin-top: 0px; margin-bottom: 100px;}
+    100%   {margin-top: 50px; margin-bottom: 50px;}
   }

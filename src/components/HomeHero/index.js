@@ -5,6 +5,7 @@ import dino from '../../assets/rocket.png';
 import CanvasParticles, {updateScreenSize} from '../../util/particles.js';
 import $ from 'jquery';
 
+
 //Component
 class Hero extends Component {
     constructor() {
@@ -12,7 +13,7 @@ class Hero extends Component {
         this.config = {
             particle: {
                 amount: 30,
-                colors: ['#FF996D', '#2B7789', '#DDC5D4', '#FEC054'],
+                colors: ['#193446', '#324a5a', '#4c616f', '#667884'],
                 minSize: 10,
                 maxSize: 15,
                 minVelocity: 2,
