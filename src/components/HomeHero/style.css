@@ -56,3 +56,18 @@ button.ptc-btn.btn-pill {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
+
+.hero-img-anim {
+  animation-name: heroimg;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  margin-top: 50px;
+}
+
+@keyframes heroimg {
+    0%   {margin-top: 50px; margin-bottom: 50px;}
+    25%  {margin-top: 0px; margin-bottom: 100px;}
+    50%  {margin-top: 50px; margin-bottom: 50px;}
+    75%  {margin-top: 50px; margin-bottom: 50px;}
+    100% {margin-top: 50px; margin-bottom: 50px;}
+  }

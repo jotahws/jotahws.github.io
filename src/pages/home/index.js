@@ -50,8 +50,9 @@ export default class Main extends Component {
                     {particlesImg}
                     <div className="profile mx-auto w-32 text-center relative p-5 rounded-lg">
                         <img src={profilePic} className="profile" alt="Portait of Joao" />
-                        <p className="mb-1"> My name is João Henrique Wind Santos, I'm a brazilian kid who is just trying to enojoy life. </p>
-                        <p> I'm currently living in Lisbon Portugal working as a software developer. I like making things with Javascript, React and React Native, but i also work with Java for the backend. I also love music, dance, photography and any kind of art.</p>
+                        <h4 className="mb-1 mx-5 "> I am a brazilian software developer, currently living in Lisbon, Portugal. </h4> 
+                        <p className="mb-1 mx-5 ">I have 6+ years of experience in programming, focusing mainly in mobile and front-end applications. I usually use Javascript, ReactJS and React Native, but I also work with Java for the back-end. </p>
+                        <p className="mb-1 mx-5"> I also love music, dance, photography and any kind of art. </p>
                         <hr className="my-4" />
                         <p className="text-gray-500">Check me out in other places of the <span className="cursive ">World Wide Web:</span></p>
                         <div className="justify-center flex mt-6">

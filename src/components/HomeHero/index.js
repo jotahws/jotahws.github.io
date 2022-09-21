@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './style.css';
-import dino from '../../assets/dino/dino.svg';
+import dino from '../../assets/rocket.png';
 import CanvasParticles, {updateScreenSize} from '../../util/particles.js';
 import $ from 'jquery';
 
@@ -11,7 +11,7 @@ class Hero extends Component {
         super();
         this.config = {
             particle: {
-                amount: 10,
+                amount: 30,
                 colors: ['#FF996D', '#2B7789', '#DDC5D4', '#FEC054'],
                 minSize: 10,
                 maxSize: 15,
@@ -71,18 +71,18 @@ class Hero extends Component {
                 <canvas id="back-canvas"></canvas>
                 <div className="flex flex-col-reverse md:flex-row justify-center">
                     <div className="hero-image flex justify-center ">
-                        <img src={dino} alt="Dinossaur riding a hoverboard"/>
+                        <img className="hero-img-anim" src={dino} alt="Dinossaur riding a hoverboard"/>
                     </div>
                     <div className="hero-title">
                         <h1 className="text-center sm:text-left">Hi there!</h1>
-                        <h2>I'm so happy you are here!</h2>
+                        <h2>I'm happy you are here</h2>
                         <h3>My name is João and I like to create stuff</h3>
                     </div>
                 </div>
                 <canvas id="front-canvas"></canvas>
                 <div id="canvas-menu">
-                    <button className="btn-pill btn-sm btn-blue ptc-btn" onClick={this.moreParticles}>More particles</button>
-                    <button className="btn-pill btn-sm btn-blue mt-1 ptc-btn" onClick={this.lessParticles}>Less particles</button>
+                    {/* <button className="btn-pill btn-sm btn-blue ptc-btn" onClick={this.moreParticles}>More particles</button>
+                    <button className="btn-pill btn-sm btn-blue mt-1 ptc-btn" onClick={this.lessParticles}>Less particles</button> */}
                 </div>
             </div>
         );
