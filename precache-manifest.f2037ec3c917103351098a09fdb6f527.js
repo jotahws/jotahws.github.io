@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "380dbe49d0eef22edc75f373c5a04e7b",
+    "revision": "1938c08a878fb41af88b51b40acb7796",
     "url": "/index.html"
   },
   {
-    "revision": "8b1f53811eac4428b621",
+    "revision": "7969f1113d54df60cae9",
     "url": "/static/css/2.c5e4f1a2.chunk.css"
   },
   {
-    "revision": "c566cb6d0d61f497350a",
+    "revision": "0e88262cc06fca03022d",
     "url": "/static/css/main.0af28b71.chunk.css"
   },
   {
-    "revision": "8b1f53811eac4428b621",
-    "url": "/static/js/2.31eb6236.chunk.js"
+    "revision": "7969f1113d54df60cae9",
+    "url": "/static/js/2.fcf1e370.chunk.js"
   },
   {
-    "revision": "c566cb6d0d61f497350a",
-    "url": "/static/js/main.2bd347db.chunk.js"
+    "revision": "0e88262cc06fca03022d",
+    "url": "/static/js/main.2be1bdef.chunk.js"
   },
   {
     "revision": "a297854fd19aa8fef4e7",
@@ -96,34 +96,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ptc-1.54389a50.svg"
   },
   {
-    "revision": "2db49c0115db1848f2b8f9276c06d9a0",
-    "url": "/static/media/ptc-10.2db49c01.svg"
-  },
-  {
-    "revision": "f96bb379bc65bc04d9a06d5c92937023",
-    "url": "/static/media/ptc-11.f96bb379.svg"
-  },
-  {
-    "revision": "822b2c56a1beee3682f55514ac0cd072",
-    "url": "/static/media/ptc-12.822b2c56.svg"
-  },
-  {
-    "revision": "f3d759c99e504194162cf1dd278cbddb",
-    "url": "/static/media/ptc-13.f3d759c9.svg"
-  },
-  {
-    "revision": "4ffd3754d9f0918d234da318479f9557",
-    "url": "/static/media/ptc-14.4ffd3754.svg"
-  },
-  {
-    "revision": "b07d521bcda5096371d48963060639dd",
-    "url": "/static/media/ptc-15.b07d521b.svg"
-  },
-  {
-    "revision": "2bfcae15fbe82484351bdb4ca6c1cd4f",
-    "url": "/static/media/ptc-16.2bfcae15.svg"
-  },
-  {
     "revision": "cd734de9cb128ef9258c14ee1aeee7b3",
     "url": "/static/media/ptc-2.cd734de9.svg"
   },
@@ -150,10 +122,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "128fdbd1ceb2fa1ac6624fecb7635082",
     "url": "/static/media/ptc-8.128fdbd1.svg"
-  },
-  {
-    "revision": "f294c69a12cc0ce40cbcb7c9788eeea5",
-    "url": "/static/media/ptc-9.f294c69a.svg"
   },
   {
     "revision": "001c05940a5dd6ce1ba37929d4cab2e9",
