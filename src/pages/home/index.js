@@ -64,17 +64,15 @@ export default class Main extends Component {
                     <div className="profile mx-auto w-32 text-center relative p-5 rounded-lg">
                         <img src={profilePic} className="profile" alt="Portait of Joao" />
                         <h4 className="mb-1 mx-5 "> My name is João Henrique Wind, I'm a brazilian software developer, currently living in Lisbon, Portugal. </h4> <br></br>
-                        <p className="mb-1 mx-5 ">I have 6+ years of experience in programming, focusing mainly in mobile and front-end applications. I usually use Javascript, ReactJS and React Native, but I also work with Java for the back-end. </p>
+                        <p className="mb-1 mx-5 ">I’m a software developer with 10 years of experience, specializing in mobile and front-end development. My primary stack includes JavaScript, React.js, and React Native, but I also have experience with back-end development using Java and JS runtimes like Node.js and Deno.</p>
                         <p className="mb-1 mx-5"> I also love music, dance, photography and any kind of art. </p>
                         <hr className="my-4" />
                         <p className="text-gray-500">Check me out in other places of the <span className="cursive ">World Wide Web:</span></p>
                         <div className="justify-center flex mt-6">
                             <a href='https://github.com/jotahws' target="_blank"><i className="fab fa-github fa-2x mx-2 text-orange-500" /></a>
                             <a href='https://www.linkedin.com/in/joão-henrique-wind-santos-705aa8114/' target="_blank"><i className="fab fa-linkedin fa-2x mx-2 text-pink-500" /></a>
-                            <a href='https://twitter.com/jotahws' target="_blank"><i className="fab fa-twitter fa-2x mx-2 text-yellow-500" /></a>
                         </div>
                     </div>
-                    <Separator name="Olá"/>
                 </div>
                 <div className="my-20">
                 </div>
